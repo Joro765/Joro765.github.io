@@ -1,5 +1,9 @@
+/* Importing font from google fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
+
+/* Reseting default box-sizing, margin and padding. */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +11,8 @@
     background-color: whitesmoke;
 }
 
+
+/* Navbar and Navbar links. */
 li, a, button {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -17,11 +23,13 @@ li, a, button {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-
+    z-index: 10;
+    width: 100%;
 }
 
 
@@ -42,12 +50,15 @@ header {
     padding: 10px 20px;
 }
 
-
 .links li a:hover {
     transition: all 0.3s ease 0s;
     color: whitesmoke;
     background-color: black;
 }
+
+
+
+/* Buttons and Logo. */
 
 button {
     padding: 9px 25px;
@@ -57,7 +68,6 @@ button {
     cursor: pointer;
 }
 
-
 button:hover {
     padding: 9px 25px;
     background-color:whitesmoke;
@@ -65,9 +75,88 @@ button:hover {
 }
 
 
-
-
 .logo {
     cursor: pointer;
 }
 
+/* Main - Banner*/
+
+.main {
+    position: relative;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.banner {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    font-size: 3.2rem;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    top: 50%;
+}
+
+/* Main - Text */
+
+.info {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+}
+
+h2 {
+    position: relative;
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    margin-left: 2%;
+}
+
+.info p {
+    position: relative;
+    max-width: 30%;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    left: 2%;
+    margin-top: 1%;
+    margin-bottom: 100px;
+}
+
+
+span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#copyright {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+
+}
