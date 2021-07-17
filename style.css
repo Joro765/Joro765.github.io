@@ -160,3 +160,48 @@ footer {
     font-size: 0.8rem;
 
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 900px) {
+    .links li {
+        right: 0px;
+        display: inline-block;
+        padding: 0px 0px;
+    }
+    .header {
+        position: fixed;
+        display: flex;
+        justify-content:space-evenly;
+        padding: 10px 10px;
+        z-index: 10;
+        width: 100%;
+    }
+    .info p {
+        position: relative;
+        max-width: 100%;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        margin-top: 1%;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    h2 {
+        position: relative;
+        font-size: 1.7rem;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0.5px;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+    }
+    .info {
+        position: relative;
+        height: 1000px;
+        width: 90%;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
