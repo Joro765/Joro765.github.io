@@ -190,7 +190,6 @@ footer {
 /* Responsive */
 
 @media only screen and (max-width: 1200px) {
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     .links li {
         right: 0px;
         display: inline-block;
@@ -267,5 +266,4 @@ footer {
         margin-top: 30px;
         max-height: 10%;
     }
-}
 }
