@@ -79,10 +79,6 @@ button:hover {
     cursor: pointer;
 }
 
-.icon {    /* SOCIAL ICON */
-    cursor: pointer;
-}
-
 /* Main - Banner*/
 
 .main {
@@ -270,18 +266,5 @@ footer {
         border-top: 2px solid black;
         margin-top: 30px;
         max-height: 10%;
-    }
-
-    nav .links {
-        left: 0px;
-
-    }
-
-    .logo {         /* DELETE THIS */
-        height: 1px;
-        width: 1px;
-        padding: 0;
-        margin: 0;
-        border: 1px solid red;
     }
 }
