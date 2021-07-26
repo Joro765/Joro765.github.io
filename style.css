@@ -170,7 +170,7 @@ footer {
 
 .center {
     margin: 0 auto;
-    line-height: 4rem;
+    line-height: 2.5rem;
 }
 
 .left {
@@ -180,22 +180,30 @@ footer {
 
 /* Mobile Version */
 
-@media (min-width: 320px) and (max-width: 480px)  {
+@media (min-width: 320px) and (max-width: 700px)  {
     body  {
          background: gray; 
         }
     footer {
         margin-bottom: 2rem;
         }
+    footer p {
+        font-size: 1rem;
+    }
     .links li {
         display: inline;
         padding: 0px 5px;
-        font-size: 1.25rem;
+        font-size: 1rem;
         }
     .banner_title {
         font-size: 1.25rem;;
     }
     .info {
         font-size: 1rem;
+        margin: 10px;
+        max-width: 110px;
+    }
+    .logo {
+        height: 30px;
     }
 }
