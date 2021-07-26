@@ -60,7 +60,7 @@ main {
     position: relative;
     margin: 0 auto;
     top: 5rem;
-    width: 92%;
+    width: 90%;
 }
 
 .banner {
@@ -164,7 +164,7 @@ main {
 footer {
     position: relative;
     margin-top: 10rem;
-    max-height: 200px;
+    max-height: auto;
     text-align: center;
     }
 
@@ -174,6 +174,28 @@ footer {
 }
 
 .left {
-    float:left;
-    margin-left: 10px;
+    margin: 0 auto;
+}
+
+
+/* Mobile Version */
+
+@media (min-width: 320px) and (max-width: 667px)  {
+    body  {
+         background: gray; 
+        }
+    footer {
+        margin-bottom: 2rem;
+        }
+    .links li {
+        display: inline;
+        padding: 0px 5px;
+        font-size: 1.25rem;
+        }
+    .banner_title {
+        font-size: 1.25rem;;
+    }
+    .info {
+        font-size: 1rem;
+    }
 }
