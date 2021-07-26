@@ -180,7 +180,7 @@ footer {
 
 /* Mobile Version */
 
-@media (min-width: 320px) and (max-width: 667px)  {
+@media (min-width: 320px) and (max-width: 480px)  {
     body  {
          background: gray; 
         }
