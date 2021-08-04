@@ -23,7 +23,7 @@ html {
     position: relative;
 }
 
-/* NAVBAR DESKTOP*/
+/* NAVBAR DESKTOP */
 
 .desktop {
     display: flex;
@@ -332,7 +332,7 @@ footer .copyright {
 
 
 /* Media Rule MOBILE */
-@media (min-width: 481px) and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .desktop {  /* Custom navbar for mobile */
         display: none;
     }
