@@ -1,209 +1,345 @@
-/* Resetting default values */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET DEFAULT RULES */
+html {
+    font-size: 16px;
 }
 
-/* Setting values for body */
-body {
-    font-family: "Helvetiva", sans-serif;
-    font-size: 22px;
-    background-color: black;
-    opacity: 0.9;
-    color: seashell;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
-/* Navigation Bar and Logo */
-header {
-    position: fixed;
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+.main {
+    position: relative;
+}
+
+/* NAVBAR DESKTOP*/
+
+.desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
-    height: 5rem;
+    height: 5.313rem;
     width: 100%;
-    border-bottom: 1px solid seashell;
-    z-index: 10;
-    background-color: black;
 }
 
-.links {
-    list-style: none;
-}
-
-.links li {
-    display: inline;
-    padding: 0px 20px;
-}
-
-.links a {
-    color: seashell;
+.desktop .logo {
+    font-family: "Roboto-Regular", sans-serif;
+    line-height: 1.6;
     text-decoration: none;
+    color: #4A4A4A;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-left: 1.875rem;
 }
 
-.links li a:hover {
+.links-desktop {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-right: 1.875rem;
+}
+
+.links-desktop a {
+    font-family: "Roboto-Regular", sans-serif;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.6rem;
+}
+
+/* NAVBAR MOBILE */
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+
+}
+
+.links-mobile {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-right: 1.875rem;
+}
+
+
+.links-mobile a {
+    text-decoration: none;
+    color: #4A4A4A;
+    padding: 0.5rem;
+    margin: 0.6rem;
+}
+
+.join {
+    background-color: #9DC20B;
     color: white;
-    text-decoration: underline;
+    padding: 0.2rem;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
 }
-
-.logo {
-    cursor: pointer;
-}
-
-/* Main */
 
 /* Banner */
 
-main {
-    position: relative;
-    margin: 0 auto;
-    top: 5rem;
-    width: 90%;
-}
-
 .banner {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/background.jpg);
+    background-image: url("images/banner-landingpage.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    background-position: center;
 }
 
-.banner_title {
+/* Desktop Banner */
+
+.desktop-banner {  
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    line-height: 2.8rem;
-    max-height: 200px;
-    width: 100%;
-    background-color: black;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
+    background-color: #9DC20A;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    margin-top: 10.625rem;
+    margin-bottom: 10.625rem;
+    margin-left: 6.25rem;
+    width: 34.375rem;
+    height: 21.875rem;
+}
+
+.desktop-banner h2 {
+    color: white;
+    font-size: 1.563rem;
+    font-family: serif;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-top: 2rem;
+}
+
+.desktop-banner h1 {
+    color: white;
+    font-size: 3.125rem;
+    font-family: "Rubik-Regural", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.desktop-banner p {
+    color: white;
+    font-size: 1.25rem;
+    font-family: "Rubik-Regural", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 0.938rem;
+}
+
+.desktop-banner button {
+    width: 25rem;
+    height: 3.75rem;
+    background-color: #4A4A4A;
+    color: white;
+    font-size: 1.25rem;
+    font-family: "Roboto-Medium", sans-serif;
+    border-radius: 0.25rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.875rem;
+    
+}
+
+/* Mobile Banner */
+
+.mobile-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mobile-banner h2 {
+    color: white;
+    font-size: 2rem;
+    font-family: serif;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.mobile-banner h1 {
+    color: white;
+    font-size: 3.75rem;
+    font-family: "Rubik-Regural", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 
-/* Gallery --- да добавя разстояние между тях  */
+/* Featured */
+
+#features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+    border: 2px solid black;
+}
+
+.feature {
+    flex: 1;
+    padding: 2rem;
+    margin: 0 1.25rem;
+    background-color: white;
+}
+
+.feature .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+.feature .content {
+    padding: 1rem 0;
+}
+
+.feature h2 {
+    padding: 0.2rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    min-width: 3rem;
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.feature h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #4a4a4a;
+    margin-top: 0.5rem;
+    min-width: 3rem;
+    font-family: "Roboto Light", sans-serif;
+}
+
+/* Gallery */
 
 .gallery {
-    position: relative;
-    max-width: 1000px;
-    margin: 6rem auto;
-}
-
-.title {
-    text-align: center;
-    line-height: 2.4rem;
-    margin: 0 auto;
-}
-
-.images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-}
-
-
-.image {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    line-height: 2.8rem;
+    padding: 4rem 0;
+    background-color: #4a4a4a;
 }
 
-/* Put this in media query
-.images > * + * {
-    margin-left: 3rem;
-}
-*/
-
-.images img {
+.images-container {
+    display: flex;
+    flex-direction: row;
     max-width: 100%;
-    height: 200px;
+    padding: 0 1%;
 }
 
-/* Locations - Не скелват добре на малък екран, да добавя заглавието "Locations" върху снимката */
+.gallery .content {
+    padding: 0 0.625rem;
+    margin-bottom: 4rem;
+}
+
+.gallery .content h2 {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.gallery .content h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
+    color: white;
+    font-family: "Roboto Light", sans-serif;
+}
 
 
-.location {
+/* Quotes */
+
+#quotes-section {
+    background-color: #f3f3f3;
+}
+
+#quotes-section .content {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    background-image: url(images/loacations.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
+    padding: 5rem 1.5rem;
 }
 
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    align-items: space-around;
-    margin: 30px;
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    color: seashell;
-    opacity: 0.8;
+#quotes-section .quote {
+    padding-right: 1.875rem;
+    font-family: "Palatino", serif;
+    font-size: 1.875rem;
+    line-height: 1.1;
+    font-style: italic;
+    color: #4a4a4a;
 }
 
+#quotes-section .quote-citation {
+    height: 1.875rem;
+}
 
-/* Footer --- Последният параграф излиза от рамката на фуутъра*/   
+/* Footer */
 
 footer {
-    position: relative;
-    margin-top: 10rem;
-    max-height: auto;
-    text-align: center;
-    }
-
-.center {
-    margin: 0 auto;
-    line-height: 2.5rem;
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
 }
 
-.left {
-    margin: 0 auto;
+footer .content {
+    color: white;
+    display: flex;
+    font-size: 0.75rem;
+}
+
+footer .copyright {
+    flex-grow: 1;
 }
 
 
-/* Mobile Version */
+/* Media Rule DESKTOP */
+@media (min-width: 800px) {
+    .mobile {   /* Custom navbar for desktop */
+        display: none;
+    }
+    .mobile-banner {    /* Custom banner for desktop */
+        display: none;
+    }
+}
 
-@media (min-width: 320px) and (max-width: 700px)  {
-    body  {
-         background: gray; 
-        }
-    footer {
-        margin-bottom: 2rem;
-        }
-    footer p {
-        font-size: 1rem;
+
+/* Media Rule MOBILE */
+@media (min-width: 481px) and (max-width: 800px) {
+    .desktop {  /* Custom navbar for mobile */
+        display: none;
     }
-    .links li {
-        display: inline;
-        padding: 0px 5px;
-        font-size: 1rem;
-        }
-    .banner_title {
-        font-size: 1.25rem;;
+    .desktop-banner {
+        display: none; /* Custom banner for mobile */
     }
-    .info {
-        font-size: 1rem;
-        margin: 10px;
-        max-width: 110px;
-    }
-    .logo {
-        height: 30px;
+    .banner {      /* Custom height for banner background for mobile */
+        height: 25rem;
     }
 }

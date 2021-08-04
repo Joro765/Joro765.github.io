@@ -1,84 +1,100 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Tea Cozy</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Fotomatic</title>
 </head>
-
 <body>
     <header>
-        <img class="logo" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png"
-            height="50px" alt="logo">
-        <ul class="links">
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Featured Tea</a></li>
-            <li><a href="#">Locations</a></li>
-        </ul>
+        <div class="desktop">
+            <a class="logo" href="#">Fotomat</a>
+            <ul class="links-desktop">
+                <li><a href="#">Product detail</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Follow us</a></li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <ul class="links-mobile">
+                <li><a href="#"><img src="images/ic-logo.svg"></a></li>
+                <li><a href="#"><img src="images/ic-product-detail.svg"></a></li>
+                <li><a href="#"><img src="images/ic-about-us.svg"></a></li>
+            </ul>
+            <button class="join">Join us</button>
+        </div>
     </header>
     <main>
         <div class="banner">
-            <div class="banner_title">
-                <h2>Our Mission</h2>
-                <h4>Handpicked, Artisanally, Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+            <div class="desktop-banner">
+                <h2>Instant</h2>
+                <h1>FORMAT CAMERA</h1>
+                <p>Email us to request a demo and be in our waiting list for August 2022 release!</p>
+                <button class="join-desktop">Join the waiting list</button>
+            </div>
+            <div class="mobile-banner">
+                <h2>Instant</h2>
+                <h1>Format Camera</h1>
+            </div>
+        </div>
+
+
+        <div id="features-section">
+            <div class="feature">
+                <div class="image-container">
+                    <img src="images/feature-1.png"/>
+                </div>
+                <div class="content">
+                    <h2>Advanced, automatic, instant</h2>
+                    <h3>Shutter speed, apperture and flash output ajust automatically</h3>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="image-container">
+                    <img src="images/feature-2.png"/>
+                </div>
+                <div class="content">
+                    <h2>Beautifully crafted inside-out</h2>
+                    <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
+                </div>
             </div>
         </div>
         <div class="gallery">
-            <div class="title">
-                <h2>Tea of the Month</h2>
-                <h4>What's Steeping at the Tea Cozy?</h4>
+            <div class="content">
+                <h2>Over 20+ filters to choose from</h2>
+                <h3>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</h3>
             </div>
-            <div class="images">
-                <div class="image">
-                    <img src="images/image_1.jpg" alt="tea">
-                    <h4>Fall Berry Blitz Tea</h4>
+            <div class="images-container">
+                <div class="image-container">
+                     <img src="images/filter-1.png"/>
                 </div>
-                <div class="image">
-                    <img src="images/image_2.jpg" alt="tea">
-                    <h4>Spiced Rum Tea</h4>
+                <div class="image-container">
+                    <img src="images/filter-2.png"/>
                 </div>
-                <div class="image">
-                    <img src="images/image_3.jpg" alt="tea">
-                    <h4>Seasonal Donuts</h4>
+                <div class="image-container">
+                    <img src="images/filter-3.png"/>
                 </div>
-                <div class="image">
-                    <img src="images/image_4.jpg" alt="tea">
-                    <h4>Myrtle Ave Tea</h4>
-                </div>
-                <div class="image">
-                    <img src="images/image_5.jpg" alt="tea">
-                    <h4>Bedford Bizarre Tea</h4>
-                </div>
+                <div class="image-container">
+                    <img src="images/filter-4.png"/>
+            </div>
+          </div>
+        </div>
+        <div id="quotes-section">
+            <div class="content">
+                <span class="quote">"It's truly something that could create a brand new photography Renaissance"</span>
+                <img class="quote-citation" src="images/photography-logo.png">
             </div>
         </div>
-        <div class="location">
-            <div class="info">
-                <h3>Downtown</h3>
-                <h4>384 West 4th St</h4>
-                <h4>Suite 108</h4>
-                <h4>Portland, Maine</h4>
+        <footer>
+            <div class="content">
+                <span class="copyright">@ 2021 Fotomatic, All Rights Reserved</span>
+                <span class="location">Designed in NYC</span>
             </div>
-            <div class="info">
-                <h3>East Bayside</h3>
-                <h4>3433 Phisherman's Avenue</h4>
-                <h4>(Northwest Corner)</h4>
-                <h4>Portland, Maine</h4>
-            </div>
-            <div class="info">
-                <h3>Oakdale</h3>
-                <h4>515 Crescent Avenue</h4>
-                <h4>Second Floor</h4>
-                <h4>Portland, Maine</h4>
-            </div>
-        </div>
+        </footer>
     </main>
-    <footer>
-        <h2 class="center">The Tea Cozy</h2>
-        <p class="center">contact@theteacozy.com</p>
-        <p class="center">917-555-8904</p>
-        <p class="left">Copyright The Tea Cozy 2021</p>
-    </footer>
 </body>
-
 </html>
