@@ -1,0 +1,65 @@
+body {
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+
+h2 {
+    color: #EA1C2C;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+
+p {
+    color: #F498B8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+
+/* navBar ICON */
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* navBar LINKS */
+#mainNavbar .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* navBar LINKS Hover */
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+/* Heading - MUSEUM OF CANDY - span  */
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-size: 2.5rem;
+        font-weight: 100;
+    }
+}
